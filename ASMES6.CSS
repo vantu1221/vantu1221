@@ -32,10 +32,47 @@ h1{
 .col_2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px;
     margin: 60px 15px;
 }
+.col_2_sp {
+    position: relative; 
+}
 
+.col_2_km {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    color: white; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    z-index: 1; 
+}
+
+.col_2_main{
+    position: relative; 
+    display: inline-block; 
+}
+.col_2_sp img{
+    width: 100%; 
+    height: auto;
+}
+.col_2_km{
+    position: absolute;
+  top: 10px; /* Cách mép trên 10px */
+  right: 10px; /* Cách mép phải 10px */
+  
+  color: white; /* Màu chữ */
+  padding: 5px 10px; /* Khoảng cách bên trong */
+  font-size: 14px; /* Kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+  border-radius: 5px; /* Bo góc */
+}
+.col_2_main_price{
+    text-decoration: line-through
+}
 .col_3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -66,12 +103,93 @@ h1{
     text-align: center;
      
 }
-.col_4_main_arrow{
-    float: right;   
+
+hr{
+    margin-top: 60px;
 }
-.col_4_main_line{
-    margin: 20px 0px;
+.col_4_main_text .col_4_main_text_1{
+ margin-top: 170px;
 }
-.col_4_main_line p{
+.col_4_main_icons .col_4_main_arrow_1{
+    float: right; 
+    margin-top:140px ;
+ 
+}
+.col_4_main_icons .col_4_main_arrow_2{
+    float: right; 
+    margin-top:30px ;
+}
+ .col_4_main_icons p{
    float: right;
+   margin-top: 30px;
+}
+.cardn_icons{
+display: flex;
+width: Fixed (1,440px)px;
+height: Fixed (270px)px;
+padding: 100px 0px 100px 0px;
+justify-content: space-between;
+background: #FAF3EA;  
+}
+
+.cardn_icons_main{
+   margin: 0px 10px;
+}
+.container_2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px;
+
+}
+footer{
+width: 1440px;
+height: 505px;
+top: 3997px;
+gap: 0px;
+opacity: 0px;
+
+}
+.links_title{
+    margin: 50px;
+}
+.mb{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.mb60{
+    margin-bottom: 60px;
+}
+.col_2_sp {
+    position: relative; 
+}
+
+.add-to-cart {
+    display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #d7dde4; 
+    color: rgb(225, 138, 32); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1; 
+    width: 80%;
+}
+
+.col_2_sp:hover .add-to-cart {
+    display: block;
+}
+
+.form input{
+    margin-top: 60px;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+}
+.footer hr{
+    margin: 10px;
 }
